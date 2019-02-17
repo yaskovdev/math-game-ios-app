@@ -1,2 +1,3 @@
-# math-game-ios-app
-Real-time math game
+# Math Game iOS App
+
+Real-time math game.
