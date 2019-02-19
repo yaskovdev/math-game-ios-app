@@ -1,20 +1,15 @@
-//
-//  ViewController.swift
-//  MathGame
-//
-//  Created by Sergey Yaskov on 17/02/2019.
-//  Copyright © 2019 Sergey Yaskov. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var counter: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print("Main view has been loaded")
     }
 
-
+    @IBAction func startButtonPressed(_ sender: UIButton) {
+        counter.text = "\(Int.random(in: 0...10))"
+    }
 }
-
